@@ -1,0 +1,120 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    overflow: hidden;font-family: 'Arial', sans-serif;
+}
+
+#calculator {
+    background-color: rgb(133, 112, 216);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid black;
+}
+.animation-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #001f3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    #calculator {
+        padding: 15px;}
+    }
+
+input, button {
+    margin: 20px;
+    padding: 8px;
+    font-size: 20px;
+}
+#text{
+    font-size: 25px;
+}
+
+button {
+    background-color: #3498db;
+    color: black;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#result {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.triangle{
+    width: 0;
+    height: 70%;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 86.6px solid #3498db;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: shakeAnimation 0.3s infinite;
+}
+.triangle1{
+    width: 0;
+    height: 70%;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 86.6px solid #3498db;
+    
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: shakeAnimation 0.3s infinite;
+    animation-delay: 0.1s;
+
+}
+.triangle2{
+    width: 0;
+    height:0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 86.6px solid #3498db;
+    margin-bottom: 30%;
+    margin-left: 10%;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: shakeAnimation 0.3s infinite;
+    animation-delay: 0.2s;
+}
+.triangle3{
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 86.6px solid #3498db;
+    margin-bottom: 30%;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: shakeAnimation 0.3s infinite;
+    animation-delay: 0.3s;
+}
+@keyframes shakeAnimation {
+    0%, 100% {
+        transform: translateX(-50%);
+    }
+    25%, 75% {
+        transform: translateX(-55%);
+    }
+    50% {
+        transform: translateX(-45%);
+    }
+}
